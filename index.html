@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABV Caluculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Homebrew ABV Calculator</h1>
+
+    </div>
+    <div class="pageBody"> 
+        
+        <div class="pageContent">
+            <div class="leftSide scroll">
+                <h3>Ever wonder how much alchohol your homebrew contains?</h3>
+                <p>Whether it's Wine, beer, or mead, it's pretty simple to determine your brew's ABV. First, you'll need a few things:</p>
+                <ul>
+                    <li>Hydrometer - This is what's used to measure the gravity of your brew</li>
+                    <li>Sample of your brew</li>
+                    <li>Time!</li>
+                </ul>
+                <br>
+                <p>You're probably wondering "What in tarnation is a hydrometer and where do I get one of those doodads?"
+                    <br>
+                    <br>
+                    INCOMING TEMP FILLER TEXT
+                    <BR>
+                    Well, a hydrometer is a device used to measure the density of a liquid. It works by floating in the liquid and the level at which it floats is determined by the density of the liquid. The denser the liquid, the higher the hydrometer will float, and the level can be read on the stem to give an idea of the liquid's density. Think of it like a tiny boat floating in a pool, and the water level it reaches tells you how deep the pool is.
+                    A hydrometer is a device used to measure the density of a liquid. It works by floating in the liquid and the level at which it floats is determined by the density of the liquid. The denser the liquid, the higher the hydrometer will float, and the level can be read on the stem to give an idea of the liquid's density. Think of it like a tiny boat floating in a pool, and the water level it reaches tells you how deep the pool is.
+                    A hydrometer is a device used to measure the density of a liquid. It works by floating in the liquid and the level at which it floats is determined by the density of the liquid. The denser the liquid, the higher the hydrometer will float, and the level can be read on the stem to give an idea of the liquid's density. Think of it like a tiny boat floating in a pool, and the water level it reaches tells you how deep the pool is.
+                    
+                    A hydrometer is a device used to measure the density of a liquid. It works by floating in the liquid and the level at which it floats is determined by the density of the liquid. The denser the liquid, the higher the hydrometer will float, and the level can be read on the stem to give an idea of the liquid's density. Think of it like a tiny boat floating in a pool, and the water level it reaches tells you how deep the pool is.
+                </p>
+                <ol>
+                    <li>Fill a test jar with the fermented liquid to be tested.</li>
+                    <br>
+                    <li>Gently insert the hydrometer into the test jar and spin it slowly to release any trapped air bubbles.</li>
+                    <br>
+                    <li>Read the initial hydrometer reading at the liquid surface level.</li>
+                    <br>
+                    <li>Wait for a few minutes until the hydrometer stabilizes, then read the final hydrometer reading.</li>
+                    <br>
+                    <li>Take the final reading and subtract the initial reading to obtain the difference.</li>
+                    <br>
+                    <li>Use a hydrometer conversion table to convert the difference into a percentage of ABV.</li>
+                    <br>
+                    <li>Record the ABV measurement for future reference.</li>
+                </ol>
+                <p>
+                    <strong>Note: It is important to use a clean and sanitized hydrometer and test jar for accurate results.</strong>
+                </p>
+                
+            </div>
+
+
+            <div class="rightSide">
+                <div class="calculator">
+                    <p>Let's start calculating!</p>
+                    <form class="calForm">
+                        Original Gravity (OG): <input type="text" id="og">
+                        Final Gravity (FG): <input type="text" id="fg">
+                        <br>
+                        <button type="button"class="calcButton" onclick="calculateABV()">Calculate!</button>
+                    </form>
+                    <p>ABV: <span id="abv"></span></p>
+                </div>
+            </div>
+    </div>
+    
+    <div class="footer">
+        <p>Copyright © That One Noob 2023</p>
+    </div>
+
+</body>
+</html>

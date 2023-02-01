@@ -1,0 +1,76 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1547803437-56a009e90946?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(238, 221, 221,.7);
+    margin:0%;
+}
+
+.pageBody {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "tahoma", sans-serif;
+    
+}
+
+
+.pageContent {
+
+    display: flex;
+    gap: 2%;
+}
+
+.leftSide {
+    width: 70%;
+    padding:1%;
+    background-color: rgb(238, 221, 221,.7);
+    
+
+}
+
+.rightSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding:100px;
+    height:100px;
+    background-color: rgb(238, 221, 221,.7);
+    position: sticky;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgb(19, 19, 19);
+    top: 10%;
+}
+
+.calForm {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.calcButton {
+    background-color: #1f4b92;
+    color:#E5E7EB;
+    height: 2em  auto;
+    border-color: #E5E7EB;
+    border-radius: 50px;
+}
+
+.header{
+    display: flex;
+    padding: 3px;
+    font-family: "tahoma", sans-serif;
+    margin-top: 0%;
+    background-color: rgba(48, 36, 36, 0.938);
+    font-family: "tahoma", sans-serif;
+    color:rgb(230, 230, 230);
+}
+
+.footer{
+    display:flex;
+    justify-content: center;
+    background-color: rgba(48, 36, 36, 0.938);
+    font-family: "tahoma", sans-serif;
+    color:rgb(230, 230, 230);
+}
