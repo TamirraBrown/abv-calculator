@@ -7,6 +7,8 @@
     <title>ABV Caluculator</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/shoelace.js"></script>
 </head>
 <body>
     <div class="header">
@@ -51,10 +53,13 @@
                     <br>
                     <li>Record the ABV measurement for future reference.</li>
                 </ol>
-                <p>
-                    <strong>Note: It is important to use a clean and sanitized hydrometer and test jar for accurate results.</strong>
-                </p>
-                
+                <br>
+                <sl-alert open>
+                    <sl-icon slot="icon" name="info-circle" ></sl-icon>
+                    Note: It is important to use a clean and sanitized hydrometer and test jar for accurate results.
+                  </sl-alert>
+                  <br>
+                  <br>
             </div>
 
 
@@ -62,14 +67,25 @@
                 <div class="calculator">
                     <p>Let's start calculating!</p>
                     <form class="calForm">
-                        Original Gravity (OG): <input type="text" id="og">
-                        Final Gravity (FG): <input type="text" id="fg">
+                        <sl-input type="number" size="medium" label="Original Gravity (OG):"pill></sl-input>
+                        <sl-input type="number" size="medium" label="Final Gravity (FG)"pill></sl-input>
                         <br>
-                        <button type="button"class="calcButton" onclick="calculateABV()">Calculate!</button>
+                        <sl-button class="calBtn" size="medium" pill>Calculate</sl-button>
                     </form>
                     <p>ABV: <span id="abv"></span></p>
                 </div>
             </div>
+    </div>
+
+    <div class="vidSection">
+        <div>
+            <p>
+                If you're more of a visual learner, check out this video! You can find other related video on YouTube by clicking here.
+            </p>
+            <div id="player">
+                
+            </div>
+        </div>
     </div>
     
     <div class="footer">
