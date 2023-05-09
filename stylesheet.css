@@ -22,7 +22,6 @@ body {
 .leftSide {
     width: 80%;
     padding:1%;
-    background-color: rgb(156, 187, 162);
     color:rgba(2, 29, 70);
     border-radius: 20px;
 
@@ -86,10 +85,16 @@ ol li:before{
     color:rgb(230, 230, 230);
 }
 
+.headerImage{
+    display: flex;
+    justify-self: center;
+    height: 500px;
+    width: 800px;
+}
+
 .vidSection{
     gap: 2%;
     padding:1%;
-    background-color: rgb(136, 196, 149);
     color:rgba(2, 29, 70);
     border-radius: 20px;
     display: flex;
