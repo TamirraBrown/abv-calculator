@@ -1,15 +1,19 @@
-function calculateABV() {
-    // Get OG and FG values from input fields
-    var og = document.getElementById("og").value;
-    var fg = document.getElementById("fg").value;
-
-    // Calculate ABV using the following formula:
-    // (OG - FG) * 131.25
-    var abv = (og - fg) * 131.25;
-
-    // Display the result
-    document.getElementById("abv").innerHTML = abv;
+const calculateBtn = document.getElementById("calculate-btn");
+const originalGravityInput = document.getElementById("original-gravity");
+const finalGravityInput = document.getElementById("final-gravity");
+const resultElement = document.getElementById("result");
+        
+calculateBtn.addEventListener("click", function() {
+  const originalGravity = parseFloat(originalGravityInput.value);
+  const finalGravity = parseFloat(finalGravityInput.value);
+            
+  if (!isNaN(originalGravity) && !isNaN(finalGravity)) {
+    const abv = (originalGravity - finalGravity) * 131.25;
+    resultElement.textContent = "ABV: " + abv.toFixed(2) + "%";
+  } else {
+    resultElement.textContent = "Invalid input. Please enter numeric values.";
   }
+});
 
 
   //YouTube iFrame
